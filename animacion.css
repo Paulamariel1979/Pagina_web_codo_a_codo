@@ -1,0 +1,79 @@
+a{
+    color: blue;
+    padding: 2px;
+    font-size: 25px;
+    font-size: 30px;
+    text-align: center;
+    padding-left: 0.5cm;
+    padding-right: 0.5cm;
+    padding-top: 0.5cm;
+    margin-top: 15cm;
+    margin-left: 15cm;
+    border: 1cm;
+    border-color: grey;
+    border-radius: 30%;
+
+}
+a:hover{
+    color: blue;
+    padding: 2px;
+    background-color: #b9c2c2;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    transition-delay: 0.7;
+}
+
+a::after{
+    content: "!";
+    color:red;
+    font-size: 30px;
+    text-align: center;
+    padding-left: 0.5cm;
+    padding-right: 0.5cm;
+    padding-top: 0.5cm;
+    margin-top: 15cm;
+    margin-left: 0cm;
+    border: 1cm;
+    border-color: grey;
+    border-radius: 30%;
+}
+
+a::before{
+    content: "¡";
+    color: red;
+    font-size: 30px;
+    text-align: center;
+    padding-left: 0.5cm;
+    padding-right: 0.5cm;
+    padding-top: 0.5cm;
+    margin-top: 15cm;
+    margin-left: 15cm;
+    border: 1cm;
+    border-color: grey;
+    border-radius: 30%;
+}
+
+@keyframes changecolor{
+    from { background-color: beige;}
+    to { background-color: rgb(222, 233, 229);}
+}
+
+.anim{
+    background-color:beige;
+    width: 400px;
+    height: 50px;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    padding-left: 0.5cm;
+    padding-right: 0.5cm;
+    padding-top: 0.5cm;
+    margin-top: 15cm;
+    margin-left: 15cm;
+    border: 1cm;
+    border-color: grey;
+    border-radius: 30%;
+    animation: changecolor 5s linear infinite alternate;
+    
+}
