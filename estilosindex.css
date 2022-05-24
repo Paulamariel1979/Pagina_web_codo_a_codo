@@ -167,8 +167,8 @@ header ul {
     background-color: beige;
     width: 300px;
     height: 300px;
-    margin: 30px 30px 0px 30px;
-    padding: 40px 40px 40px 40px;
+    margin: 30px;
+    padding: 40px;
     display: inline-block;
     color: black;
     border-style: dashed;
@@ -180,11 +180,11 @@ header ul {
     background-color: rgb(176, 112, 29);
     width: 300px;
     height: 400px;
-    margin: 30px 30px 30px 30px;
-    padding: 40px 40px 40px 40px;
-    border: 5px 5px 5px 5px;
+    margin: 30px;
+    padding: 40px;
+    border: 5px;
     display: inline-block;
-    border-style: dashed;
+
 }
 
 #contacta {
@@ -311,4 +311,91 @@ article div img {
     }
 
 
+}
+
+#anim {
+    background-color: beige;
+    width: 30rem;
+    height: 3rem;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    padding-left: 0.5cm;
+    padding-right: 0.5cm;
+    padding-top: 0.5cm;
+    margin-top: 2rem;
+
+    border: 1cm;
+    border-color: grey;
+    border-radius: 3rem;
+    animation: changecolor 5s linear infinite alternate;
+
+}
+
+#cajalarga {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#linkquiero {
+    color: blue;
+
+    font-size: 30px;
+    text-align: center;
+    padding: 0.5cm;
+
+}
+
+#quierocomprar {
+    margin: 2rem;
+    padding-left: 0px;
+    border: 2px solid grey;
+    border-radius: 8rem;
+}
+
+#quierocomprar:hover {
+    color: blue;
+    padding: 2px;
+    background-color: #b9c2c2;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    transition-delay: 0.7;
+}
+
+#quierocomprar::after {
+    content: "!";
+    color: red;
+    font-size: 30px;
+    text-align: center;
+    padding: 0.5cm;
+    margin-top: 1cm;
+
+
+}
+
+#quierocomprar::before {
+    content: "¡";
+    color: red;
+    font-size: 30px;
+    text-align: center;
+    padding-left: 0.5cm;
+    padding-right: 0.5cm;
+    padding-top: 0.5cm;
+
+
+    border-color: grey;
+    border-radius: 30%;
+}
+
+@keyframes changecolor {
+    from {
+        background-color: beige;
+    }
+
+    to {
+        background-color: rgb(222, 233, 229);
+    }
 }
